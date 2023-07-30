@@ -59,18 +59,51 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 10px;
 }
 
 .output {
-    width: 150px;
-    height: 100px;
+    width: 180px;
+    height: 120px;
     background-color: rgb(90, 74, 74);
     border-radius: 20%;
     display: flex;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    color: #ffff;
+    color: #ffffff;
+}
+
+#gifDisplay {
+    width: 100px;
+    height: 100px;
+}
+.Onclick {
+    background-position: center;
+    background-size: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(184, 175, 175);
+}
+#textDisplay {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgb(7, 218, 7);
+}
+
+
+#celciusDisplay {
+    margin-top: 5px;
+}
+
+#celciusDisplay, #fahneitDisplay {
+    font-size: 30px;
+    color: bisque;
+}
+
+.giphyDisplaOnclick {
+    width: 100px;
+    height: 80px;
 }
 
 .footer {
