@@ -1,6 +1,6 @@
 body {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     margin: 0px;
@@ -16,17 +16,18 @@ body {
 }
 
 #line {
-    width: 40%;
+    width: 60%;
     border-bottom: 2px solid grey;
 }
 
 .header p {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 40px;
 }
 
 .search {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 2px;
     margin-top: 10px;
@@ -39,7 +40,6 @@ body {
     padding: 2px;
     font-size: 8px;
 }
-
 button {
     height: 18px;
     border-radius: 10px;
@@ -87,13 +87,16 @@ button:active {
 }
 #textDisplay {
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 15px;
     color: rgb(7, 218, 7);
 }
 
 
 #celciusDisplay {
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #celciusDisplay, #fahneitDisplay {
@@ -120,4 +123,55 @@ button:active {
 
 .footer button:active {
     background-color: rgb(192, 161, 161);
+}
+
+@media only screen and (max-width: 2000px) {
+    body {
+        height: 800px
+    }
+
+    #myInput{
+        width: 316px;
+        height: 50px;
+        margin-right: 5px;
+        padding-inline: 15px;
+        font-size: 20px;
+
+
+    }
+
+    #search {
+        height: 50px;
+        font-size: 20px;
+        box-shadow: 1px 0px 4px 0px grey;
+    }
+
+    .output {
+        width: 390px;
+        height: 350px;
+        font-size: 40px;
+    }
+
+    #gifDisplay {
+        width: 309px;
+        height: 309px;
+        background-size: 60px;
+    }
+
+    .main {
+        margin-top: 8%;
+    }
+    #celciusBtn, #fahneitBtn {
+        margin-top: 50px;
+        width: 80px;
+        height: 50px;
+        font-size: 20px;
+        box-shadow: 1px 0px 4px 0px grey;
+    }
+
+    #otherInfo {
+        font-size: 20px;
+        text-align: left;
+    }
+
 }
